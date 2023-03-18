@@ -2,7 +2,7 @@ const gameStory = [
     {
         title: 'Pagina 1',
         subtitle: "lorem ipsum",
-        background: document.body.style.backgroundImage"url('css/images/page-1.png')",
+        background: "url('css/images/page-1.png')",
         options: [
             {
                 option: "Hola",

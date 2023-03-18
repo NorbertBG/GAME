@@ -18,7 +18,7 @@ const container = document.getElementById('game-container');
 container.innerHTML = `
   <h1>${game.title}</h1>
   <h2>${game.subtitle}</h2>
-  <div style="background-image: ${game.background}"></div>
+  <div class="background" style="background-image: ${game.background}"></div>
   <ul>
     ${game.options.map(option => `<li>${option.option} - ${option.Score}</li>`).join('')}
   </ul>
