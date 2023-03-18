@@ -21,18 +21,18 @@ const gameStory = [
     {
         title: 'Pagina 2',
         subtitle: "dkslfjlsdkfj",
-        background: '2h 22min',
+        background: "url('css/images/Test-image.jpeg')",
         options: [
             {
-                option: "Hola",
+                option: "Penis",
                 Score: 10,
             },
             {
-                option: "hola2",
+                option: "Vulpix",
                 Score: 50,
             },
             {
-                option: "hola3",
+                option: "jeje",
                 Score: 90,
             }
         ]
@@ -40,7 +40,7 @@ const gameStory = [
     {
         title: 'Pagina 3',
         subtitle: "dkslfjlsdkfj",
-        background: '2h 22min',
+        background: "url('css/images/Test-image.jpeg')",
         options: [
             {
                 option: "Hola",
