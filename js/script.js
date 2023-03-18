@@ -32,11 +32,11 @@ class gameMain {
     subtitle.innerHTML = gameStory[counter].subtitle;
 
     let background = document.querySelector(".background")
-    background.src = gameStory[counter].background;
+    background.style.backgroundImage = gameStory[counter].background;
 
-    let options = document.querySelector(".options")
-    options.innerHTML = gameStory[counter].options;
-  }
+    let options = document.querySelector(".options");
+    options.innerHTML = gameStory[counter].options.map(option => `<li>${option.option}</li>`).join('');
+ }
   
   buttonAction() {
     console.log(this);
