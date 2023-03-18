@@ -5,6 +5,8 @@
 
 let counter = 0;
 
+let points = 0;
+
 class gameMain {
   constructor (title, subtitle, background, options){
       this.title = title;
@@ -35,7 +37,8 @@ class gameMain {
     background.style.backgroundImage = gameStory[counter].background;
 
     let options = document.querySelector(".options");
-    options.innerHTML = gameStory[counter].options.map(option => `<li>${option.option}</li>`).join('');
+    options.innerHTML = gameStory[counter].options.map(item => `<input type="radio" id="item" name="itemOption" value=${item.option.score}> <label for="item">  ${item.option} </label>`).join('');
+  
  }
   
   buttonAction() {
@@ -45,6 +48,10 @@ class gameMain {
       this.incrementCounter()
     });
   }
+
+  // incrementPoints() {
+  //   points += this.options.score
+  // }
 }
 const game = new gameMain(gameStory[0].title, gameStory[0].subtitle, gameStory[0].background, gameStory[0].options);
 
@@ -53,8 +60,8 @@ container.innerHTML = `
   <h1>${game.title}</h1>
   <h2>${game.subtitle}</h2>
   <div class="background" style="background-image: ${game.background}"></div>
-  <ul class="options">
-    ${game.options.map(option => `<li>${option.option}</li>`).join('')}
-  </ul>
+  <div class="options">
+    ${game.options.map(item => `<input type="radio" id="item" name="itemOption" value=${item.option.score}> <label for="item">  ${item.option} </label>`).join('')}
+  </div
 `;
 
