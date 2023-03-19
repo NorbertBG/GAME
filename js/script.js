@@ -45,9 +45,11 @@ class gameMain {
 const game = new gameMain(gameStory[0].title, gameStory[0].subtitle, gameStory[0].background, gameStory[0].options);
 const container = document.getElementById('game-container');
 container.innerHTML = 
-`<div class="background-image" style="background-image: ${game.background}">
+`<div class="background" style="background-image: ${game.background}">
+<div class="content-box">
 <h1>${game.title}</h1>
 <h2>${game.subtitle}</h2>
-<div class="options">${game.options.map(item => `<input type="radio" id="item" name="itemOption" value=${item.option.score}> <label for="item">  ${item.option} </label>`).join('')}</div>
+<div class="options">${game.options.map(item => `<input type="radio" id="item" name="itemOption" value=${item.option.score}><label for="item">${item.option}</label>`).join('')}</div>
+</div>
 </div>`;
 

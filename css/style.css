@@ -1,11 +1,26 @@
 body {
   font-family: 'Press Start 2P';
-  color: white;
-  text-align: center;
+  color: black;
+  text-align: justify;
 }
-div {
-    border: 1px black solid;
-  }
-.background-image {
-  height: 500px;
+.background {
+  height: 40rem;
+  border: 0.5rem black solid;
 }
+.content-box {
+  border: 0.3rem black solid;
+  margin-top: 25rem;
+  margin-right: 2rem;
+  margin-left: 2rem;
+  background-color: white;
+}
+.options {
+  display: flex;
+}
+h1 {
+  margin: 1.5rem;
+}
+h2 {
+  margin: 1.5rem;
+}
+
