@@ -1,5 +1,5 @@
 html {
-  font-size: 10px;
+    font-size: 10px;
 }
 body {
     font-family: 'Press Start 2P';
@@ -23,25 +23,22 @@ h1 {
     line-height: 1.5em;
 }
 h2 {
-  margin: 2em;
-  font-size: 0.9em;
+    margin: 2em;
+    font-size: 0.9em;
 }
 .options {
-  font-size: 0.7em;
-  line-height: 2em;
-  display: grid;
-  grid-template-columns: 10em 50em;
-  grid-gap: 1em;
-  justify-content: center;
-  margin: 2em;
+    font-size: 0.7em;
+    line-height: 2em;
+    display: grid;
+    grid-template-columns: 10em 50em;
+    grid-gap: 1em;
+    justify-content: center;
+    margin: 2em;
 }
 input {
-  justify-self: end;
+    justify-self: end;
 }
 label {
-  text-align: justify;
+    text-align: justify;
 }
-
-
-
 

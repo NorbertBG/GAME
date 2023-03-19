@@ -10,12 +10,19 @@ class gameMain {
     this.title = title;
     this.subtitle = subtitle;
     this.background = background;
+    this.result = document.getElementById('result');
     this.options = options;
+
     this.buttonAction();
   }
   incrementCounter() {
+    this.incrementPoints();
     counter++;
-    this.changeContent();
+    if (counter === gameStory.length) {
+      this.showResult();
+    } else {
+      this.changeContent();
+    }
   }
   changeContent() {
     this.title = gameStory[counter].title;
@@ -29,19 +36,41 @@ class gameMain {
     let background = document.querySelector(".background")
     background.style.backgroundImage = gameStory[counter].background;
     let options = document.querySelector(".options");
-    options.innerHTML = gameStory[counter].options.map(item => `<input type="radio" id="item" name="itemOption" value=${item.option.score}> <label for="item">  ${item.option} </label>`).join('');
+    options.innerHTML = gameStory[counter].options.map(item => `<input type="radio" id="item" name="itemOption" value=${item.score}> <label for="item">  ${item.option} </label>`).join('');
   }
   buttonAction() {
-    console.log(this);
     const button = document.querySelector("#button");
     button.addEventListener("click", () => {
       this.incrementCounter()
     });
   }
-}
-// incrementPoints() {
-//   points += this.options.score
-// }
+  incrementPoints() {
+    console.log(this)
+    const selectedOption = document.querySelector('input[name="itemOption"]:checked');
+    if (selectedOption) {
+      points += parseInt(selectedOption.value);
+      console.log("Points:", points);
+    }
+  }
+    showResult() {
+      if (points < 50) {
+        this.result.innerHTML = `
+          <div><h1>Game Over</h1></div>
+          <div><p>You got only ${points} points. Better luck next time!</p></div>
+        `;
+      } else if (points < 100) {
+        this.result.innerHTML = `
+          <div><h1>Good job!</h1></div>
+          <div><p>You got ${points} points. Keep it up!</p></div>
+        `;
+      } else {
+        this.result.innerHTML = `
+          <div><h1>Congratulations!</h1></div>
+          <div><p>You got ${points} points. You are awesome!</p></div>
+        `;
+      }
+    }
+  }
 const game = new gameMain(gameStory[0].title, gameStory[0].subtitle, gameStory[0].background, gameStory[0].options);
 const container = document.getElementById('game-container');
 container.innerHTML =
@@ -49,7 +78,6 @@ container.innerHTML =
 <div class="content-box">
 <h1>${game.title}</h1>
 <h2>${game.subtitle}</h2>
-<div class="options">${game.options.map(item => `<input type="radio" id="item" name="itemOption" value=${item.option.score}><label for="item">${item.option}</label>`).join('')}</div>
+<div class="options">${game.options.map(item => `<input type="radio" id="item" name="itemOption" value=${item.score}> <label for="item">  ${item.option} </label>`).join('')}</div>
 </div>
 </div>`;
-

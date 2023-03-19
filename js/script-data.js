@@ -6,15 +6,15 @@ const gameStory = [
         options: [
             {
                 option: "Go partying and go directly to work without any sleep",
-                Score: 10,
+                score: 10,
             },
             {
                 option: "Go on a trip and arrive the same day",
-                Score: 30,
+                score: 30,
             },
             {
                 option: "Go for lunch in the afternoon with friends",
-                Score: 90,
+                score: 90,
             }
         ]
     },
@@ -25,15 +25,15 @@ const gameStory = [
         options: [
             {
                 option: "Penis",
-                Score: 10,
+                score: 10,
             },
             {
                 option: "Vulpix",
-                Score: 50,
+                score: 50,
             },
             {
                 option: "jeje",
-                Score: 90,
+                score: 90,
             }
         ]
     },
@@ -44,15 +44,15 @@ const gameStory = [
         options: [
             {
                 option: "Hola",
-                Score: 10,
+                score: 10,
             },
             {
                 option: "hola2",
-                Score: 50,
+                score: 50,
             },
             {
                 option: "hola3",
-                Score: 90,
+                score: 90,
             }
         ]
     },
@@ -63,15 +63,15 @@ const gameStory = [
         options: [
             {
                 option: "Hola",
-                Score: 10,
+                score: 10,
             },
             {
                 option: "hola2",
-                Score: 50,
+                score: 50,
             },
             {
                 option: "hola3",
-                Score: 90,
+                score: 90,
             }
         ]
     },
@@ -82,15 +82,15 @@ const gameStory = [
         options: [
             {
                 option: "Hola",
-                Score: 10,
+                score: 10,
             },
             {
                 option: "hola2",
-                Score: 50,
+                score: 50,
             },
             {
                 option: "hola3",
-                Score: 90,
+                score: 90,
             }
         ]
     },
