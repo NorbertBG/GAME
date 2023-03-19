@@ -1,8 +1,3 @@
-// const myButton = document.getElementById('myButton');
-// myButton.addEventListener('click', function() {
-//   document.body.innerHTML = '<h1>dsfsdf</h1><button id="myButton2">Ir a la siguiente página</button>';
-// });
-
 let counter = 0;
 let points = 0;
 class gameMain {
@@ -14,6 +9,7 @@ class gameMain {
     this.options = options;
     this.buttonAction();
   }
+  // increment adding the function incrementPoints:
   incrementCounter() {
     this.incrementPoints();
     counter++;
@@ -37,12 +33,15 @@ class gameMain {
     let options = document.querySelector(".options");
     options.innerHTML = gameStory[counter].options.map(item => `<input type="radio" id="item" name="itemOption" value=${item.score}> <label for="item">  ${item.option} </label>`).join('');
   }
+
+// add the button action:
   buttonAction() {
     const button = document.querySelector("#button");
     button.addEventListener("click", () => {
       this.incrementCounter()
     });
   }
+  // add the score of the input:
   incrementPoints() {
     const selectedOption = document.querySelector('input[name="itemOption"]:checked');
     if (selectedOption) {
@@ -50,6 +49,7 @@ class gameMain {
       console.log("Score:", points);
     }
   }
+  // show result page and hide the game container and the button:
   showResult() {
     document.getElementById('game-container').style.display = 'none';
     document.getElementById('button').style.display = 'none';
@@ -71,6 +71,7 @@ class gameMain {
     }
   }
 }
+// display the game container:
 const game = new gameMain(gameStory[0].title, gameStory[0].subtitle, gameStory[0].background, gameStory[0].options);
 const container = document.getElementById('game-container');
 container.innerHTML =
