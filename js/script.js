@@ -12,7 +12,6 @@ class gameMain {
     this.background = background;
     this.result = document.getElementById('result');
     this.options = options;
-
     this.buttonAction();
   }
   incrementCounter() {
@@ -51,25 +50,27 @@ class gameMain {
       console.log("Score:", points);
     }
   }
-    showResult() {
-      if (points < 50) {
-        this.result.innerHTML = `
-          <div><h1>Game Over</h1></div>
-          <div><p>You got only ${points} points. Better luck next time!</p></div>
+  showResult() {
+    document.getElementById('game-container').style.display = 'none';
+    document.getElementById('button').style.display = 'none';
+    if (points < 50) {
+      this.result.innerHTML = `
+          <div><h1>Failed!</h1></div>
+          <div><p>You got only ${points} points. Please try to make better live decisions!</p></div>
         `;
-      } else if (points < 100) {
-        this.result.innerHTML = `
+    } else if (points < 100) {
+      this.result.innerHTML = `
           <div><h1>Good job!</h1></div>
-          <div><p>You got ${points} points. Keep it up!</p></div>
+          <div><p>You got ${points} points. Keep it up and with time you will learn to choose better!</p></div>
         `;
-      } else {
-        this.result.innerHTML = `
+    } else {
+      this.result.innerHTML = `
           <div><h1>Congratulations!</h1></div>
-          <div><p>You got ${points} points. You are awesome!</p></div>
+          <div><p>You got ${points} points. You are awesome and will have a great future!</p></div>
         `;
-      }
     }
   }
+}
 const game = new gameMain(gameStory[0].title, gameStory[0].subtitle, gameStory[0].background, gameStory[0].options);
 const container = document.getElementById('game-container');
 container.innerHTML =
