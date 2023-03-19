@@ -45,11 +45,10 @@ class gameMain {
     });
   }
   incrementPoints() {
-    console.log(this)
     const selectedOption = document.querySelector('input[name="itemOption"]:checked');
     if (selectedOption) {
       points += parseInt(selectedOption.value);
-      console.log("Points:", points);
+      console.log("Score:", points);
     }
   }
     showResult() {
