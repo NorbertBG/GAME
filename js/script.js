@@ -9,7 +9,7 @@ class gameMain {
     this.options = options;
     this.buttonAction();
   }
-  // increment adding the function incrementPoints:
+  // increment adding the function incrementPoints
   incrementCounter() {
     this.incrementPoints();
     counter++;
@@ -34,7 +34,7 @@ class gameMain {
     options.innerHTML = gameStory[counter].options.map(item => `<input type="radio" id="item" name="itemOption" value=${item.score}> <label for="item">  ${item.option} </label>`).join('');
   }
 
-// add the button action:
+  // add the button action:
   buttonAction() {
     const button = document.querySelector("#button");
     button.addEventListener("click", () => {
