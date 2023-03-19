@@ -1,7 +1,7 @@
 const gameStory = [
     {
         title: 'Pagina 1',
-        subtitle: "lorem ipsum",
+        subtitle: "Choose an option:",
         background: "url('css/images/page-1.png')",
         options: [
             {
@@ -20,7 +20,7 @@ const gameStory = [
     },
     {
         title: 'Pagina 2',
-        subtitle: "dkslfjlsdkfj",
+        subtitle: "Choose an option:",
         background: "url('css/images/Test-image.jpeg')",
         options: [
             {
@@ -39,7 +39,7 @@ const gameStory = [
     },
     {
         title: 'Pagina 3',
-        subtitle: "dkslfjlsdkfj",
+        subtitle: "Choose an option:",
         background: "url('css/images/Test-image.jpeg')",
         options: [
             {
