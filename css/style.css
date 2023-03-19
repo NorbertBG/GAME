@@ -1,8 +1,11 @@
+body {
+  font-family: 'Press Start 2P';
+  color: white;
+  text-align: center;
+}
 div {
     border: 1px black solid;
   }
-
-
-.background {
+.background-image {
   height: 500px;
 }
