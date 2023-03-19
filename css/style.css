@@ -1,7 +1,6 @@
 html {
   font-size: 10px;
 }
-
 body {
     font-family: 'Press Start 2P';
     color: black;
@@ -24,9 +23,9 @@ h1 {
 }
 h2 {
   margin: 2em;
-  font-size: 1em;
+  font-size: 1.2em;
 }
-.options{
+.options {
   font-size: 1em;
   display: flex;
   justify-content: center;
@@ -34,5 +33,6 @@ h2 {
 }
 label {
   margin-right: 3em;
+  margin-right: 2em;
 }
 
