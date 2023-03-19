@@ -41,3 +41,23 @@ input {
 label {
     text-align: justify;
 }
+
+.background-button {
+  background: black;
+}
+button {
+  font-family: 'Press Start 2P';
+  color: black;
+  text-align: center;
+  margin: 1em;
+  padding: 1em;
+  background-color: #fff;
+  border: 2px solid black;
+  border-radius: 4px;
+  transition: all 0.3s ease-in-out;
+}
+button:hover {
+  background-color: grey;
+  color: white;
+  cursor: pointer;
+}

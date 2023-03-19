@@ -41,14 +41,18 @@ class gameMain {
       this.incrementCounter()
     });
   }
-  // add the score of the input:
+  // add the score of the input and print an error message that does not let the user continue:
   incrementPoints() {
     const selectedOption = document.querySelector('input[name="itemOption"]:checked');
     if (selectedOption) {
       points += parseInt(selectedOption.value);
       console.log("Score:", points);
+    } else {
+      alert("Please select a choice to continue!");
+      throw new Error("Option not selected");
     }
   }
+  
   // show result page and hide the game container and the button:
   showResult() {
     document.getElementById('game-container').style.display = 'none';
