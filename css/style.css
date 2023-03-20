@@ -7,30 +7,30 @@ body {
     text-align: center;
 }
 .background {
-    height: 60em;
+    height: 600px;
     border: 0.5em black solid;
 }
 .content-box {
     border: 0.3em black solid;
-    margin-top: 40em;
-    margin-right: 2em;
-    margin-left: 2em;
+    margin-top: 38em;
+    margin-right: 3em;
+    margin-left: 3em;
     background-color: white;
 }
 h1 {
     margin: 1em;
-    font-size: 1em;
+    font-size: 0.9em;
     line-height: 1.5em;
 }
 h2 {
     margin: 2em;
-    font-size: 0.9em;
+    font-size: 0.8em;
 }
 .options {
     font-size: 0.7em;
     line-height: 2em;
     display: grid;
-    grid-template-columns: 10em 50em;
+    grid-template-columns: 5em 30em;
     grid-gap: 1em;
     justify-content: center;
     margin: 2em;
@@ -41,23 +41,72 @@ input {
 label {
     text-align: justify;
 }
-
 .background-button {
-  background: black;
+    background: black;
 }
 button {
-  font-family: 'Press Start 2P';
-  color: black;
-  text-align: center;
-  margin: 1em;
-  padding: 1em;
-  background-color: #fff;
-  border: 2px solid black;
-  border-radius: 4px;
-  transition: all 0.3s ease-in-out;
+    font-family: 'Press Start 2P';
+    color: black;
+    text-align: center;
+    margin: 1em;
+    padding: 1em;
+    background-color: #fff;
+    border: 2px solid black;
+    border-radius: 4px;
+    transition: all 0.3s ease-in-out;
 }
 button:hover {
-  background-color: grey;
-  color: white;
-  cursor: pointer;
+    background-color: grey;
+    color: white;
+    cursor: pointer;
+}
+
+@media(min-width: 768px) {
+    .background {
+        height: 850px;
+        border: 0.5em black solid;
+    }
+
+    .content-box {
+        margin-top: 66em;
+        margin-right: 10em;
+        margin-left: 10em;
+    }
+
+    .options {
+        font-size: 0.7em;
+        line-height: 2em;
+        display: grid;
+        grid-template-columns: 10em 56em;
+        grid-gap: 1em;
+        justify-content: center;
+        margin: 2em;
+    }
+}
+
+@media(min-width: 1024px) {
+
+    .background {
+        height: 900px;
+        border: 0.5em black solid;
+    }
+    .content-box {
+        margin-top: 74em;
+        margin-right: 20em;
+        margin-left: 20em;
+    }
+}
+
+
+@media(min-width: 1440px) {
+
+    .background {
+        height: 1000px;
+        border: 0.5em black solid;
+    }
+    .content-box {
+        margin-top: 83em;
+        margin-right: 35em;
+        margin-left: 35em;
+    }
 }

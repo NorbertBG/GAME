@@ -52,7 +52,6 @@ class gameMain {
       throw new Error("Option not selected");
     }
   }
-  
   // show result page and hide the game container and the button:
   showResult() {
     document.getElementById('game-container').style.display = 'none';
