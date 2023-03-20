@@ -87,11 +87,11 @@ button:hover {
 @media(min-width: 1024px) {
 
     .background {
-        height: 900px;
+        height: 700px;
         border: 0.5em black solid;
     }
     .content-box {
-        margin-top: 74em;
+        margin-top: 50em;
         margin-right: 20em;
         margin-left: 20em;
     }
@@ -101,11 +101,11 @@ button:hover {
 @media(min-width: 1440px) {
 
     .background {
-        height: 1000px;
+        height: 700px;
         border: 0.5em black solid;
     }
     .content-box {
-        margin-top: 83em;
+        margin-top: 50em;
         margin-right: 35em;
         margin-left: 35em;
     }
