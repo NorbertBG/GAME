@@ -2,14 +2,20 @@ let counter = 0;
 let points = 0;
 
 class gameMain {
-  constructor(title, subtitle, background, options) {
+  constructor(title, subtitle, background, options, playerChosen) {
     this.title = title;
     this.subtitle = subtitle;
     this.background = background;
     this.result = document.getElementById('result');
     this.options = options;
+    this.playerChosen = playerChosen;
     this.buttonAction();
   };
+  
+
+  showCharacter (){
+    this.playerChosen.style.display = "block";
+  }
 
   // increment adding the function incrementPoints
   incrementCounter() {
@@ -91,6 +97,20 @@ class gameMain {
   }
 };
 
+// Choose your player
+let playerChosen = ""
+
+function choosePlayer () {
+ let allPlayers = document.querySelectorAll(".player")
+
+ allPlayers.forEach(player => {
+    player.addEventListener("click", () =>  {
+    playerChosen = player;
+    });
+  })
+}
+choosePlayer();
+
 // start without the game container and the game button:
 document.getElementById('game-container').style.display = "none";
 document.getElementById('button').style.display = 'none';
@@ -111,7 +131,7 @@ welcomePage();
 
 // display the game container:
 function initGame ()  {
-const game = new gameMain(gameStory[0].title, gameStory[0].subtitle, gameStory[0].background, gameStory[0].options);
+const game = new gameMain(gameStory[0].title, gameStory[0].subtitle, gameStory[0].background, gameStory[0].options, playerChosen);
 const container = document.getElementById('game-container');
 
 container.innerHTML =
