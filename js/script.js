@@ -2,20 +2,17 @@ let counter = 0;
 let points = 0;
 
 class gameMain {
-  constructor(title, subtitle, background, options, playerChosen) {
+  constructor(title, subtitle, background, options, playerChosen, imgPlayer) {
     this.title = title;
     this.subtitle = subtitle;
     this.background = background;
     this.result = document.getElementById('result');
     this.options = options;
     this.playerChosen = playerChosen;
+    this.imgPlayer = imgPlayer
     this.buttonAction();
     console.log(playerChosen)
   };
-  
-  getInfoPlayer() {
-    return infoPlayer.style.display = this.playerChosen.querySelector("img, src") 
-  }
 
   // increment adding the function incrementPoints
   incrementCounter() {
@@ -109,6 +106,8 @@ function choosePlayer() {
     });
   });
 }
+
+// Player validation - function called in the start button
  
 function playerValidation() {
   if (playerChosen === null) {
@@ -116,7 +115,6 @@ function playerValidation() {
     throw new Error("PJ not selected");
 }}
 choosePlayer();
-
 
 // start without the game container and the game button:
 document.getElementById('game-container').style.display = "none";
@@ -126,13 +124,18 @@ document.getElementById('button').style.display = 'none';
 function welcomePage () {
  
   document.querySelector("#start").addEventListener("click", () => {
+     playerValidation()
     initGame()
-    playerValidation()
+   
     document.getElementById('welcomePage').style.display = "none";
 
     document.getElementById('game-container').style.display = "inline";
     document.getElementById('button').style.display = 'inline';
+
     playerChosen.setAttribute("id","theOne");
+    let imgPlayer = document.querySelector('#theOne img');
+    imgPlayer = imgPlayer.getAttribute("src");
+    console.log(imgPlayer);
   });
 }
 
@@ -140,7 +143,7 @@ welcomePage();
 
 // display the game container:
 function initGame ()  {
-const game = new gameMain(gameStory[0].title, gameStory[0].subtitle, gameStory[0].background, gameStory[0].options, playerChosen);
+const game = new gameMain(gameStory[0].title, gameStory[0].subtitle, gameStory[0].background, gameStory[0].options, playerChosen, imgPlayer);
 const container = document.getElementById('game-container');
 
 container.innerHTML =
@@ -148,7 +151,7 @@ container.innerHTML =
 <div class="content-box">
 <h1>${game.title}</h1>
 <h2>${game.subtitle}</h2>
-<img${gameMain.playerChosen}/>
+<img src="${game.imgPlayer}"/>
 <div class="options">${game.options.map(item => `<input type="radio" id="item" name="itemOption" value=${item.score}> <label for="item">  ${item.option} </label>`).join('')}</div>
 </div>
 </div>`;
