@@ -36,7 +36,11 @@ h2 {
     justify-content: center;
     margin: 2em;
 }
-
+#theOne {
+    display: inline;
+    height: 2vh;
+    width: 2vw;
+}
 input {
     justify-self: end;
 }

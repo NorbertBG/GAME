@@ -10,11 +10,11 @@ class gameMain {
     this.options = options;
     this.playerChosen = playerChosen;
     this.buttonAction();
+    console.log(playerChosen)
   };
   
-
-  showCharacter (){
-    this.playerChosen.style.display = "block";
+  getInfoPlayer() {
+    return infoPlayer.style.display = this.playerChosen.querySelector("img, src") 
   }
 
   // increment adding the function incrementPoints
@@ -98,18 +98,25 @@ class gameMain {
 };
 
 // Choose your player
-let playerChosen = ""
+let playerChosen = null;
 
-function choosePlayer () {
- let allPlayers = document.querySelectorAll(".player")
+function choosePlayer() {
+  let allPlayers = document.querySelectorAll(".player");
 
- allPlayers.forEach(player => {
-    player.addEventListener("click", () =>  {
-    playerChosen = player;
+  allPlayers.forEach((player) => {
+    player.addEventListener("click", () => {
+      playerChosen = player;
     });
-  })
+  });
 }
+ 
+function playerValidation() {
+  if (playerChosen === null) {
+    alert("Please select a PJ to continue!");
+    throw new Error("PJ not selected");
+}}
 choosePlayer();
+
 
 // start without the game container and the game button:
 document.getElementById('game-container').style.display = "none";
@@ -117,13 +124,15 @@ document.getElementById('button').style.display = 'none';
 
 // Welcome page and start button:
 function welcomePage () {
-
+ 
   document.querySelector("#start").addEventListener("click", () => {
     initGame()
+    playerValidation()
     document.getElementById('welcomePage').style.display = "none";
 
     document.getElementById('game-container').style.display = "inline";
     document.getElementById('button').style.display = 'inline';
+    playerChosen.setAttribute("id","theOne");
   });
 }
 
@@ -139,6 +148,7 @@ container.innerHTML =
 <div class="content-box">
 <h1>${game.title}</h1>
 <h2>${game.subtitle}</h2>
+<img${gameMain.playerChosen}/>
 <div class="options">${game.options.map(item => `<input type="radio" id="item" name="itemOption" value=${item.score}> <label for="item">  ${item.option} </label>`).join('')}</div>
 </div>
 </div>`;
