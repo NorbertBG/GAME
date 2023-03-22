@@ -122,24 +122,29 @@ document.getElementById('game-container').style.display = "none";
 document.getElementById('button').style.display = 'none';
 
 // Welcome page and start button:
+let imgPlayer = null;
+
 function welcomePage () {
  
   document.querySelector("#start").addEventListener("click", () => {
+
      playerValidation()
-    initGame()
-   
-    document.getElementById('welcomePage').style.display = "none";
 
-    document.getElementById('game-container').style.display = "inline";
-    document.getElementById('button').style.display = 'inline';
+     playerChosen.setAttribute("id","theOne");
+     imgPlayer = document.querySelector('#theOne img').getAttribute("src");
+     console.log(imgPlayer);
+    
+     document.getElementById('welcomePage').style.display = "none";
 
-    playerChosen.setAttribute("id","theOne");
-    let imgPlayer = document.querySelector('#theOne img');
-    imgPlayer = imgPlayer.getAttribute("src");
-    console.log(imgPlayer);
+     document.getElementById('game-container').style.display = "inline";
+     document.getElementById('button').style.display = 'inline';
+
+     initGame()
+    
   });
+  return imgPlayer;
 }
-
+console.log(imgPlayer);
 welcomePage();
 
 // display the game container:
@@ -152,7 +157,7 @@ container.innerHTML =
 <div class="content-box">
 <h1>${game.title}</h1>
 <h2>${game.subtitle}</h2>
-<img src="${game.imgPlayer}"/>
+<img src="${game.imgPlayer}" height="50px" width="150px"/>
 <div class="options">${game.options.map(item => `<input type="radio" id="item" name="itemOption" value=${item.score}> <label for="item">  ${item.option} </label>`).join('')}</div>
 </div>
 </div>`;
