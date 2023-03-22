@@ -1,5 +1,6 @@
 let counter = 0;
 let points = 0;
+let imgPlayer;
 
 class gameMain {
   constructor(title, subtitle, background, options, playerChosen, imgPlayer) {
@@ -9,7 +10,7 @@ class gameMain {
     this.result = document.getElementById('result');
     this.options = options;
     this.playerChosen = playerChosen;
-    this.imgPlayer = imgPlayer
+    this.imgPlayer = imgPlayer;
     this.buttonAction();
     console.log(playerChosen)
   };
@@ -73,13 +74,13 @@ class gameMain {
     document.getElementById('game-container').style.display = 'none';
     document.getElementById('button').style.display = 'none';
 
-    if (points < 50) {
+    if (points < 5) {
       this.result.innerHTML = `
           <div><h1>Failed!</h1></div>
           <div><p>You got only ${points} points. Please try to make better live decisions!</p></div>
         `;
 
-    } else if (points < 100) {
+    } else if (points < 10) {
       this.result.innerHTML = `
           <div><h1>Good job!</h1></div>
           <div><p>You got ${points} points. Keep it up and with time you will learn to choose better!</p></div>
@@ -111,8 +112,8 @@ function choosePlayer() {
  
 function playerValidation() {
   if (playerChosen === null) {
-    alert("Please select a PJ to continue!");
-    throw new Error("PJ not selected");
+    alert("Please select a Player to continue!");
+    throw new Error("Player not selected");
 }}
 choosePlayer();
 
@@ -155,6 +156,4 @@ container.innerHTML =
 <div class="options">${game.options.map(item => `<input type="radio" id="item" name="itemOption" value=${item.score}> <label for="item">  ${item.option} </label>`).join('')}</div>
 </div>
 </div>`;
-}
-
-
+};

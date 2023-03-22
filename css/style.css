@@ -8,7 +8,7 @@ body {
 }
 .background {
     height: 600px;
-    border: 0.5em black solid;
+    border: 1em black solid;
 }
 .content-box {
     border: 0.3em black solid;
