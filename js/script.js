@@ -9,7 +9,7 @@ class gameMain {
     this.result = document.getElementById('result');
     this.options = options;
     this.playerChosen = playerChosen;
-    this.imgPlayer = imgPlayer
+    this.imgPlayer = imgPlayer;
     this.buttonAction();
     console.log(playerChosen)
   };
@@ -121,24 +121,29 @@ document.getElementById('game-container').style.display = "none";
 document.getElementById('button').style.display = 'none';
 
 // Welcome page and start button:
+let imgPlayer = null;
+
 function welcomePage () {
  
   document.querySelector("#start").addEventListener("click", () => {
+
      playerValidation()
-    initGame()
-   
-    document.getElementById('welcomePage').style.display = "none";
 
-    document.getElementById('game-container').style.display = "inline";
-    document.getElementById('button').style.display = 'inline';
+     playerChosen.setAttribute("id","theOne");
+     imgPlayer = document.querySelector('#theOne img').getAttribute("src");
+     console.log(imgPlayer);
+    
+     document.getElementById('welcomePage').style.display = "none";
 
-    playerChosen.setAttribute("id","theOne");
-    let imgPlayer = document.querySelector('#theOne img');
-    imgPlayer = imgPlayer.getAttribute("src");
-    console.log(imgPlayer);
+     document.getElementById('game-container').style.display = "inline";
+     document.getElementById('button').style.display = 'inline';
+
+     initGame()
+    
   });
+  return imgPlayer;
 }
-
+console.log(imgPlayer);
 welcomePage();
 
 // display the game container:
