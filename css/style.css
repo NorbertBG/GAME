@@ -22,6 +22,26 @@ h1 {
     font-size: 0.9vw;
     line-height: 1.5em;
 }
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* La animación para parpadear el cursor */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgb(255, 255, 255) }
+  }
+  
+  .typing {
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: typing 4s steps(30, end), blink-caret .75s step-end infinite;
+    animation-fill-mode: forwards;
+  }
 
 h2 {
     margin: 2em;
