@@ -1,6 +1,7 @@
 html {
     font-size: 10px;
 }
+
 body {
     font-family: 'Press Start 2P';
     color: black;
@@ -19,8 +20,11 @@ body {
 }
 h1 {
     margin: 1em;
-    font-size: 0.9vw;
+    font-size: 1.9vw;
+    color:rgb(255, 255, 255)
     line-height: 1.5em;
+    text-shadow: -5px 4px rgb(151, 151, 151);
+    text-shadow: 0 0 20px #0051ff;
 }
 @keyframes typing {
     from { width: 0 }
@@ -70,6 +74,20 @@ label {
 .background-button {
     background:  rgba(255, 255, 255, 1);
 }
+
+.welcomeimage{
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+}
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+
 button {
     font-family: 'Press Start 2P';
     color: black;

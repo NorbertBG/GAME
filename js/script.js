@@ -26,7 +26,7 @@ class gameMain {
     } else {
       this.changeContent();
     }
-  }
+  };
 
   changeContent() {
     this.title = gameStory[counter].title;
