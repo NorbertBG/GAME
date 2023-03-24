@@ -12,9 +12,9 @@ body {
 }
 .content-box {
     border: 0.3em black solid;
-    margin-top: 10em;
-    margin-right: 3em;
-    margin-left: 3em;
+    margin-top: 31vh;
+    margin-right: 5vh;
+    margin-left: 5vh;
     background-color: rgba(255, 255, 255, 0.7);
 }
 p {
@@ -64,6 +64,27 @@ h1 {
     height: 10vh;
     margin: 15px;
 }
+.image-position-game {
+    width: 20vw; 
+    height: 10vh;
+    margin: 15px;
+}
+.image-position-game {
+    position: absolute;
+    left: 10px; /* Posición horizontal de la imagen */
+    top: 20px; /* Posición vertical de la imagen */
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+}
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+
 #theOne {
     display: inline;
     height: 2vh;

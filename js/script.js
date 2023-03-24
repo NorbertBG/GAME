@@ -3,9 +3,8 @@ let points = 0;
 let imgPlayer;
 
 class gameMain {
-  constructor(title, subtitle, background, options, playerChosen, imgPlayer) {
+  constructor(title, background, options, playerChosen, imgPlayer) {
     this.title = title;
-    this.subtitle = subtitle;
     this.background = background;
     this.result = document.getElementById('result');
     this.options = options;
@@ -30,15 +29,11 @@ class gameMain {
 
   changeContent() {
     this.title = gameStory[counter].title;
-    this.subtitle = gameStory[counter].subtitle;
     this.background = gameStory[counter].background;
     this.options = gameStory[counter].options;
 
     let title = document.querySelector("#game-container h1");
     title.innerHTML = gameStory[counter].title;
-
-    let subtitle = document.querySelector("#game-container h2");
-    subtitle.innerHTML = gameStory[counter].subtitle;
 
     let background = document.querySelector(".background")
     background.style.backgroundImage = gameStory[counter].background;
@@ -143,14 +138,14 @@ welcomePage();
 
 // display the game container:
 function initGame ()  {
-const game = new gameMain(gameStory[0].title, gameStory[0].subtitle, gameStory[0].background, gameStory[0].options, playerChosen, imgPlayer);
+const game = new gameMain(gameStory[0].title, gameStory[0].background, gameStory[0].options, playerChosen, imgPlayer);
 const container = document.getElementById('game-container');
 
 container.innerHTML =
   `<div class="background" style="background-image: ${game.background}">
 <div class="content-box">
 <h1 class="options-question">${game.title}</h1>
-<img src="${game.imgPlayer}" height="50px" width="150px"/>
+<img class="image-position-game" src="${game.imgPlayer}" height="50px" width="150px"/>
 <div class="options">${game.options.map(item => `<input type="radio" id="item" name="itemOption" value=${item.score}> <label for="item">  ${item.option} </label>`).join('')}</div>
 </div>
 </div>`;

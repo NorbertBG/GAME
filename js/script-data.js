@@ -20,7 +20,6 @@ const gameStory = [
     },
     {
         title: 'OMG. Try not to panic, but tomorrow is the last day to present the final project! ',
-        subtitle: `Make a choice:`,
         background: `url('css/images/awoqe4y9ajf91.gif')`,
         options: [
             {
@@ -39,7 +38,6 @@ const gameStory = [
     },
     {
         title: `After 6 long months that passed too fast… IT'S GRADUATION DAY!`,
-        subtitle: `Make a choice:`,
         background: `url('css/images/84d1dc46883455.5868f5e2a5313.gif')`,
         options: [
             {
@@ -58,7 +56,6 @@ const gameStory = [
     },
     {
         title: `First Interview for a real tech company! Can't believe it!`,
-        subtitle: `Make a choice:`,
         background: `url('css/images/b76eeee29132b1dcb9bad496ce7d4ee0.gif')`,
         options: [
             {
@@ -77,7 +74,6 @@ const gameStory = [
     },
     {
         title: `Linkedin just congratulated me on my first year in the company! I can't belive how time flies by! It sucks I'm stuck on this group project with this guy I can't stand.`,
-        subtitle: `Make a choice:`,
         background: `url('css/images/tumblr_pv5623ZzA71qciqqno3_640.gif')`,
         options: [
             {
@@ -96,7 +92,6 @@ const gameStory = [
     },
     {
         title: 'ME!?! A PROMOTION! I CANT BELIEVE IT! OMG!',
-        subtitle: `Make a choice:`,
         background: `url('css/images/215739.gif')`,
         options: [
             {
