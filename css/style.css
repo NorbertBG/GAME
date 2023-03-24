@@ -182,33 +182,41 @@ button:hover {
 
 @media(min-width: 768px) {
     .background {
-        height: 850px;
-        border: 0.5em black solid;
+        height: 83vh;
     }
 
     .content-box {
-        margin-top: 30em;
-        margin-right: 10em;
-        margin-left: 10em;
+        margin-top: 44vh;
+        margin-right: 3vh;
+        margin-left: 3vh;
     }
     .welcomeimage {
         width: 15vw;
         height: 10vh;
-        margin: 15px 25px;
-    }
-    p {
-        margin: 3em;
-        font-size: 2.5vw;
-        line-height: 1.5em;
+        margin: 30px 25px;
     }
     .options {
-        font-size: 0.7em;
-        line-height: 2em;
+        font-size: 1.1vw;
+        line-height: 2vh;
         display: grid;
-        grid-template-columns: 10em 56em;
-        grid-gap: 1em;
+        grid-template-columns: 1vh 49vh;
+        grid-gap: 1vh;
         justify-content: center;
-        margin: 2em;
+        margin: 2vh;
+    }
+    .options-question {
+        font-size: 2vw;
+        color: black;
+        line-height: 2.3vh;
+        margin: 4vw 3vw;
+    }
+    .image-position-game {
+        width: 15vw;
+        height: 8vh;
+        margin: 15px;
+    }
+    .image-position-game {
+        top: 38vh; 
     }
 }
 @media(min-width: 1024px) {
