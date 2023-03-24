@@ -8,13 +8,13 @@ body {
 }
 .background {
     height: 121vh;
-    background-size: 115vh 220vw;
+    background-size: 115vh 265vw;
     background-repeat: no-repeat;
     border: 1vh black solid;
 }
 .content-box {
     border: 0.5vh black solid;
-    margin-top: 65vh;
+    margin-top: 58vh;
     margin-right: 2vh;
     margin-left: 2vh;
     background-color: rgba(255, 255, 255, 0.9);
@@ -88,7 +88,7 @@ p {
     font-size: 1.8vw;
     line-height: 2.3vh;
     display: grid;
-    grid-template-columns: 1vh 38vh;
+    grid-template-columns: 1vh 29vh;
     grid-gap: 1vh;
     justify-content: center;
     margin: 2vh;
@@ -106,7 +106,7 @@ p {
 .image-position-game {
     position: absolute;
     left: 1vh; 
-    top: 58vh; 
+    top: 51vh; 
     -webkit-animation: mover 1s infinite alternate;
     animation: mover 1s infinite alternate;
 }
@@ -201,7 +201,7 @@ button:hover {
         font-size: 1.1vw;
         line-height: 2vh;
         display: grid;
-        grid-template-columns: 1vh 49vh;
+        grid-template-columns: 1vh 55vh;
         grid-gap: 1vh;
         justify-content: center;
         margin: 2vh;
@@ -287,7 +287,7 @@ p {
     font-size: 1.7vw;
 }
 .background {
-    height: 74vh;
+    height: 85vh;
     background-size: 180vh 53vw;
 
 }
