@@ -64,17 +64,17 @@ class gameMain {
     if (points < 5) {
       this.result.innerHTML = `
           <div><h1 class="typing-red">Failed!</h1></div>
-          <div><p>You got only ${points} points. Please try to make better live decisions!</p></div>
+          <div><p class="final-result-text">You got only ${points} points. Please try to make better live decisions!</p></div>
         `;
     } else if (points < 10) {
       this.result.innerHTML = `
           <div><h1 class="typing">Good job!</h1></div>
-          <div><p>You got ${points} points. Keep it up and with time you will learn to choose better!</p></div>
+          <div><p class="final-result-text">You got ${points} points. Keep it up and with time you will learn to choose better!</p></div>
         `;
     } else {
       this.result.innerHTML = `
           <div><h1 class="typing-green">Congratulations!</h1></div>
-          <div><p>You got ${points} points. You are awesome and will have a great future!</p></div>
+          <div><p class="final-result-text">You got ${points} points. You are awesome and will have a great future!</p></div>
         `;
     }
   }

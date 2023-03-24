@@ -8,6 +8,8 @@ body {
 }
 .background {
     height: 121vh;
+    background-size: 115vh 220vw;
+    background-repeat: no-repeat;
     border: 1vh black solid;
 }
 .content-box {
@@ -180,8 +182,10 @@ button:hover {
 
 
 @media(min-width: 768px) {
+
     .background {
         height: 83vh;
+        background-size: 80vh 124vw;
     }
     .content-box {
         margin-top: 44vh;
@@ -216,6 +220,7 @@ button:hover {
     .image-position-game {
         top: 38vh; 
     }
+
 }
 @media(min-width: 1024px) {
 
@@ -227,7 +232,8 @@ button:hover {
         line-height: 1.5em;
     }
     .background {
-        height: 700px;
+        height: 85vh;
+        background-size: 133vh 76vw;
         border: 0.5em black solid;
     }
     p {
@@ -281,7 +287,9 @@ p {
     font-size: 1.7vw;
 }
 .background {
-    height: 75vh;
+    height: 74vh;
+    background-size: 180vh 53vw;
+
 }
     .options {
         font-size: 1.5vh;
