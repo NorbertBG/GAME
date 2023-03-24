@@ -138,7 +138,6 @@ label {
 .background-button {
     background: rgba(255, 255, 255, 1);
 }
-
 .welcomeimage {
     -webkit-animation: mover 1s infinite alternate;
     animation: mover 1s infinite alternate;
@@ -184,7 +183,6 @@ button:hover {
     .background {
         height: 83vh;
     }
-
     .content-box {
         margin-top: 44vh;
         margin-right: 3vh;
@@ -221,8 +219,11 @@ button:hover {
 }
 @media(min-width: 1024px) {
 
+    .typing {
+        margin: 1vh auto;
+    }
     h1 {
-        font-size: 4vw;
+        font-size: 5vw;
         line-height: 1.5em;
     }
     .background {
@@ -230,57 +231,63 @@ button:hover {
         border: 0.5em black solid;
     }
     p {
-        margin: 3em;
-        font-size: 1.5vw;
+        margin: 4vh;
+        font-size: 2vw;
         line-height: 1.5em;
     }
     .welcomeimage {
-        width: 15vw;
-        height: 15vh;
-        margin: 15px 25px;
+        width: 13vw;
+        height: 14vh;
+        margin: 15px 50px;
     }
     .content-box {
-        margin-top: 20em;
-        margin-right: 20em;
-        margin-left: 20em;
+        margin-top: 40vh;
+        margin-right: 5vh;
+        margin-left: 5vh;
     }
     button {
-        font-size: 2vw;
-        margin: 3em;
-        padding: 1em;
-        border: 5px solid black;
+        font-size: 3vw;
+        margin: 2.5vh;
+        padding: 1vh;
+        border: 0.5vh solid black;
     }
     .options {
         font-size: 1.5vh;
-        line-height: 2em;
+        line-height: 2vh;
         display: grid;
-        grid-template-columns: 5em 30em;
+        grid-template-columns: 1vh 90vh;
         grid-gap: 1em;
         justify-content: center;
         margin: 2em;
     }
     .options-question {
         font-size: 1.5vw;
-        line-height: 1.5em;
+        line-height: 3.5vh;
+    }
+    .image-position-game {
+        width: 11vw;
+        height: 9vh;
+        margin: 15px;
+        top: 35vh; 
     }
 }
 
-
 @media(min-width: 1440px) {
 
-    .background {
-        height: 1000px;
-        border: 0.5em black solid;
-    }
-    h1 {
-        font-size: 2vw;
-        line-height: 1.5em;
-    }
+.typing {
+font-size: 3vw;
+}
+p {
+    font-size: 1.7vw;
+}
+.background {
+    height: 75vh;
+}
     .options {
         font-size: 1.5vh;
         line-height: 2em;
         display: grid;
-        grid-template-columns: 5em 30em;
+        grid-template-columns: 1vh 130vh;
         grid-gap: 1em;
         justify-content: center;
         margin: 2em;
@@ -288,22 +295,21 @@ button:hover {
     .options-question {
         font-size: 1.5vw;
         line-height: 1.5em;
+        margin: 4vh;
     }
-
-    p {
-        margin: 2em;
-        font-size: 1.5vw;
-        line-height: 1.5em;
+    .image-position-game {
+        top: 29vh; 
+        width: 8vw;
     }
     .welcomeimage {
         width: 10vw;
-        height: 15vh;
-        margin: 5px 30px;
+        height: 13vh;
+        margin: 3vh 8vh;
     }
     .content-box {
-        margin-top: 35em;
-        margin-right: 35em;
-        margin-left: 35em;
+        margin-top: 35vh;
+        margin-right: 5vh;
+        margin-left: 5vh;
     }
     .options-question {
         font-size: 1vw;
