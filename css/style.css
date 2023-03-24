@@ -7,84 +7,123 @@ body {
     text-align: center;
 }
 .background {
-    height: 600px;
-    border: 1em black solid;
+    height: 121vh;
+    border: 1vh black solid;
 }
 .content-box {
-    border: 0.3em black solid;
-    margin-top: 31vh;
-    margin-right: 5vh;
-    margin-left: 5vh;
-    background-color: rgba(255, 255, 255, 0.7);
+    border: 0.5vh black solid;
+    margin-top: 65vh;
+    margin-right: 2vh;
+    margin-left: 2vh;
+    background-color: rgba(255, 255, 255, 0.9);
 }
 p {
-    margin: 3em;
-    font-size: 3vw;
-    line-height: 1.5em;
-}
-h1 {
-    font-size: 5vw;
-    color:rgb(255, 255, 255);
-    line-height: 1.5em;
-    text-shadow: -5px 4px rgb(151, 151, 151);
-    text-shadow: 0 0 20px #0051ff;
+    margin: 3.5vh;
+    font-size: 3.1vw;
+    line-height: 2.9vh;
 }
 @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-  }
-  /* La animación para parpadear el cursor */
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: rgb(255, 255, 255) }
-  }
-  .typing {
+    from {
+        width: 0
+    }
+    to {
+        width: 100%
+    }
+}
+/* La animación para parpadear el cursor */
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent
+    }
+    50% {
+        border-color: rgb(255, 255, 255)
+    }
+}
+.typing {
+    font-size: 5vw;
+    color: rgb(255, 255, 255);
+    line-height: 2.5em;
+    text-shadow: 0 0 20px #0051ff;
     overflow: hidden;
-    border-right: .15em solid orange;
     white-space: nowrap;
     margin: 2em auto;
-    letter-spacing: .15em;
-    animation: typing 4s steps(30, end), blink-caret .75s step-end infinite;
+    letter-spacing: 0.15em;
+    animation: typing 4s steps(30, end), blink-caret 0.75s step-end infinite;
     animation-fill-mode: forwards;
-  }
-  .options-question {
-    font-size: 3vw;
-  }
+}
+.typing-red {
+    font-size: 5vw;
+    color: rgb(255, 255, 255);
+    line-height: 2.5em;
+    text-shadow: 0 0 20px red;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 2em auto;
+    letter-spacing: 0.15em;
+    animation: typing 4s steps(30, end), blink-caret 0.75s step-end infinite;
+    animation-fill-mode: forwards;
+}
+.typing-green {
+    font-size: 5vw;
+    color: rgb(255, 255, 255);
+    line-height: 2.5em;
+    text-shadow: 0 0 20px green;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 2em auto;
+    letter-spacing: 0.15em;
+    animation: typing 4s steps(30, end), blink-caret 0.75s step-end infinite;
+    animation-fill-mode: forwards;
+}
+.options-question {
+    font-size: 2vw;
+    color: black;
+    line-height: 2.3vh;
+    margin: 8vw 5vw;
+}
 .options {
-    font-size: 0.7em;
-    line-height: 2em;
+    font-size: 1.8vw;
+    line-height: 2.3vh;
     display: grid;
-    grid-template-columns: 5em 30em;
-    grid-gap: 1em;
+    grid-template-columns: 1vh 38vh;
+    grid-gap: 1vh;
     justify-content: center;
-    margin: 2em;
+    margin: 2vh;
 }
 .welcomeimage {
-    width: 20vw; 
+    width: 20vw;
     height: 10vh;
-    margin: 15px;
+    margin: 18px 15px;
 }
 .image-position-game {
-    width: 20vw; 
+    width: 20vw;
     height: 10vh;
     margin: 15px;
 }
 .image-position-game {
     position: absolute;
-    left: 10px; /* Posición horizontal de la imagen */
-    top: 20px; /* Posición vertical de la imagen */
-    -webkit-animation: mover 1s infinite  alternate;
-    animation: mover 1s infinite  alternate;
+    left: 1vh; 
+    top: 58vh; 
+    -webkit-animation: mover 1s infinite alternate;
+    animation: mover 1s infinite alternate;
 }
 @-webkit-keyframes mover {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(-10px); }
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
 }
 @keyframes mover {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(-10px); }
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
 }
-
 #theOne {
     display: inline;
     height: 2vh;
@@ -97,22 +136,29 @@ label {
     text-align: justify;
 }
 .background-button {
-    background:  rgba(255, 255, 255, 1);
+    background: rgba(255, 255, 255, 1);
 }
 
-.welcomeimage{
-    -webkit-animation: mover 1s infinite  alternate;
-    animation: mover 1s infinite  alternate;
+.welcomeimage {
+    -webkit-animation: mover 1s infinite alternate;
+    animation: mover 1s infinite alternate;
 }
 @-webkit-keyframes mover {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(-10px); }
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
 }
 @keyframes mover {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(-10px); }
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
 }
-
 button {
     font-family: 'Press Start 2P';
     color: black;
@@ -131,6 +177,9 @@ button:hover {
     cursor: pointer;
 }
 
+
+
+
 @media(min-width: 768px) {
     .background {
         height: 850px;
@@ -143,7 +192,7 @@ button:hover {
         margin-left: 10em;
     }
     .welcomeimage {
-        width: 15vw; 
+        width: 15vw;
         height: 10vh;
         margin: 15px 25px;
     }
@@ -178,7 +227,7 @@ button:hover {
         line-height: 1.5em;
     }
     .welcomeimage {
-        width: 15vw; 
+        width: 15vw;
         height: 15vh;
         margin: 15px 25px;
     }
@@ -239,7 +288,7 @@ button:hover {
         line-height: 1.5em;
     }
     .welcomeimage {
-        width: 10vw; 
+        width: 10vw;
         height: 15vh;
         margin: 5px 30px;
     }
@@ -250,7 +299,7 @@ button:hover {
     }
     .options-question {
         font-size: 1vw;
-      }
+    }
     button {
         text-align: center;
         font-size: 2vw;
