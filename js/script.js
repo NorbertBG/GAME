@@ -150,7 +150,6 @@ container.innerHTML =
   `<div class="background" style="background-image: ${game.background}">
 <div class="content-box">
 <h1 class="options-question">${game.title}</h1>
-<h2>${game.subtitle}</h2>
 <img src="${game.imgPlayer}" height="50px" width="150px"/>
 <div class="options">${game.options.map(item => `<input type="radio" id="item" name="itemOption" value=${item.score}> <label for="item">  ${item.option} </label>`).join('')}</div>
 </div>

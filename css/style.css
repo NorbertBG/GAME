@@ -12,7 +12,7 @@ body {
 }
 .content-box {
     border: 0.3em black solid;
-    margin-top: 38em;
+    margin-top: 10em;
     margin-right: 3em;
     margin-left: 3em;
     background-color: rgba(255, 255, 255, 0.7);
@@ -100,7 +100,7 @@ button {
     margin: 3em;
     padding: 1em;
     background-color: #fff;
-    border: 2px solid black;
+    border: 3px solid black;
     border-radius: 4px;
     transition: all 0.3s ease-in-out;
 }
@@ -117,7 +117,7 @@ button:hover {
     }
 
     .content-box {
-        margin-top: 66em;
+        margin-top: 30em;
         margin-right: 10em;
         margin-left: 10em;
     }
@@ -162,21 +162,28 @@ button:hover {
         margin: 15px 25px;
     }
     .content-box {
-        margin-top: 50em;
+        margin-top: 20em;
         margin-right: 20em;
         margin-left: 20em;
     }
     button {
-        font-family: 'Press Start 2P';
-        color: black;
-        text-align: center;
         font-size: 2vw;
         margin: 3em;
         padding: 1em;
-        background-color: #fff;
-        border: 2px solid black;
-        border-radius: 4px;
-        transition: all 0.3s ease-in-out;
+        border: 5px solid black;
+    }
+    .options {
+        font-size: 1.5vh;
+        line-height: 2em;
+        display: grid;
+        grid-template-columns: 5em 30em;
+        grid-gap: 1em;
+        justify-content: center;
+        margin: 2em;
+    }
+    .options-question {
+        font-size: 1.5vw;
+        line-height: 1.5em;
     }
 }
 
@@ -184,13 +191,27 @@ button:hover {
 @media(min-width: 1440px) {
 
     .background {
-        height: 700px;
+        height: 1000px;
         border: 0.5em black solid;
     }
     h1 {
         font-size: 2vw;
         line-height: 1.5em;
     }
+    .options {
+        font-size: 1.5vh;
+        line-height: 2em;
+        display: grid;
+        grid-template-columns: 5em 30em;
+        grid-gap: 1em;
+        justify-content: center;
+        margin: 2em;
+    }
+    .options-question {
+        font-size: 1.5vw;
+        line-height: 1.5em;
+    }
+
     p {
         margin: 2em;
         font-size: 1.5vw;
@@ -202,7 +223,7 @@ button:hover {
         margin: 5px 30px;
     }
     .content-box {
-        margin-top: 50em;
+        margin-top: 35em;
         margin-right: 35em;
         margin-left: 35em;
     }
@@ -210,15 +231,10 @@ button:hover {
         font-size: 1vw;
       }
     button {
-        font-family: 'Press Start 2P';
-        color: black;
         text-align: center;
         font-size: 2vw;
         margin: 2em;
         padding: 1em;
-        background-color: #fff;
-        border: 2px solid black;
-        border-radius: 4px;
-        transition: all 0.3s ease-in-out;
+        border: 6px solid black;
     }
 }
