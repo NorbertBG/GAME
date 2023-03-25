@@ -13,15 +13,15 @@ body {
     border: 1vh black solid;
 }
 .content-box {
-    border: 0.5vh black solid;
+    border: 1vh black solid;
     margin-top: 58vh;
     margin-right: 2vh;
     margin-left: 2vh;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.7);
 }
 p {
     margin: 3.5vh;
-    font-size: 3.1vw;
+    font-size: 1.1vh;
     line-height: 2.9vh;
 }
 @keyframes typing {
@@ -43,7 +43,7 @@ p {
     }
 }
 .typing {
-    font-size: 5vw;
+    font-size: 2vw;
     color: rgb(255, 255, 255);
     line-height: 2.5em;
     text-shadow: 0 0 20px #0051ff;
@@ -79,13 +79,13 @@ p {
     animation-fill-mode: forwards;
 }
 .options-question {
-    font-size: 2vw;
+    font-size: 1.5vw;
     color: black;
     line-height: 2.3vh;
     margin: 8vw 5vw;
 }
 .options {
-    font-size: 1.8vw;
+    font-size: 1vw;
     line-height: 2.3vh;
     display: grid;
     grid-template-columns: 1vh 29vh;
@@ -95,13 +95,17 @@ p {
 }
 .welcomeimage {
     width: 20vw;
-    height: 10vh;
+    height: 20vw;
     margin: 18px 15px;
+    border-style: double;
+    border-width: 10px;
 }
 .image-position-game {
-    width: 20vw;
-    height: 10vh;
+    width: 100px;
+    height: 100px;
     margin: 15px;
+    border-style: double;
+    border-width: 10px;
 }
 .image-position-game {
     position: absolute;
@@ -129,7 +133,7 @@ p {
 #theOne {
     display: inline;
     height: 2vh;
-    width: 2vw;
+    width: 2vh;
 }
 input {
     justify-self: end;
@@ -143,6 +147,7 @@ label {
 .welcomeimage {
     -webkit-animation: mover 1s infinite alternate;
     animation: mover 1s infinite alternate;
+
 }
 @-webkit-keyframes mover {
     0% {
@@ -272,7 +277,7 @@ button:hover {
     }
     .image-position-game {
         width: 11vw;
-        height: 9vh;
+        height: 11vh;
         margin: 15px;
         top: 35vh; 
     }
