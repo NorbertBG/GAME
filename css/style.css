@@ -8,8 +8,8 @@ body {
 }
 .background {
     height: 121vh;
-    background-size: 115vh 265vw;
     background-repeat: no-repeat;
+    background-size: cover;
     border: 1vh black solid;
 }
 .content-box {
@@ -93,16 +93,22 @@ p {
     justify-content: center;
     margin: 2vh;
 }
+
 .welcomeimage {
     width: 20vw;
-    height: 10vh;
-    margin: 18px 15px;
+    height: 20vw;
+    margin: 18px 3px;
+    border-style: double;
+    border-width: 10px;
 }
 .image-position-game {
-    width: 20vw;
+    width: 10vh;
     height: 10vh;
-    margin: 15px;
+    margin: 1vh;
+    border-style: double;
+    border-width: 10px;
 }
+
 .image-position-game {
     position: absolute;
     left: 1vh; 
@@ -136,9 +142,6 @@ input {
 }
 label {
     text-align: justify;
-}
-.background-button {
-    background: rgba(255, 255, 255, 1);
 }
 .welcomeimage {
     -webkit-animation: mover 1s infinite alternate;
@@ -178,14 +181,9 @@ button:hover {
     cursor: pointer;
 }
 
-
-
-
 @media(min-width: 768px) {
-
     .background {
         height: 83vh;
-        background-size: 80vh 124vw;
     }
     .content-box {
         margin-top: 44vh;
@@ -223,7 +221,6 @@ button:hover {
 
 }
 @media(min-width: 1024px) {
-
     .typing {
         margin: 1vh auto;
     }
@@ -233,7 +230,6 @@ button:hover {
     }
     .background {
         height: 85vh;
-        background-size: 133vh 76vw;
         border: 0.5em black solid;
     }
     p {
@@ -279,7 +275,6 @@ button:hover {
 }
 
 @media(min-width: 1440px) {
-
 .typing {
 font-size: 3vw;
 }
@@ -288,7 +283,6 @@ p {
 }
 .background {
     height: 85vh;
-    background-size: 180vh 53vw;
 
 }
     .options {
